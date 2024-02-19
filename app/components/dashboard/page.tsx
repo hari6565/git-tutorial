@@ -32,7 +32,7 @@ const page = () => {
           </Button>
         </form>
         <Link
-          href="/GitHubLogin"
+          href="/components/GithubLoginForm"
           className="flex justify-between bg-black p-3 rounded-md"
         >
           <Image
