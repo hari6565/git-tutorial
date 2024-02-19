@@ -32,7 +32,7 @@ const page = () => {
           </Button>
         </form>
         <Link
-          href="/GitHubLogin"
+          href="/components/GithubLoginForm"
           className="flex justify-between bg-black p-3 rounded-md"
         >
           <Image
@@ -44,8 +44,8 @@ const page = () => {
           <h2 className="text-white">Sign in with GitHub</h2>
         </Link>
         <Link
-          href="/GoogleLogin"
-          className="flex justify-between p-3 rounded-md"
+          href="/components/Googlelogin"
+          className="flex justify-between p-3 rounded-md border-2 border-slate-500"
         >
           <Image
             src={Google}
