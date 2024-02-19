@@ -44,7 +44,7 @@ const page = () => {
           <h2 className="text-white">Sign in with GitHub</h2>
         </Link>
         <Link
-          href="/GoogleLogin"
+          href="/components/Googlelogin"
           className="flex justify-between p-3 rounded-md"
         >
           <Image
