@@ -25,14 +25,14 @@ function Component() {
   const [switch2, setSwitch2] = useState(true);
   const [switch1, setSwitch1] = useState(false);
   return (
-    <div className=" bg-slate-300 w-[350px] h-[88vh] overflow-x-auto">
+    <div className=" bg-slate-200 w-[350px] h-[88vh] overflow-x-auto">
       {/* <div className='left-0'> */}
       {/* <Card className="w-[350px] h-[623px] bg-slate-300"> */}
       {/* <h5 className="text-xl font-bold tracking-tight text-gray-200 dark:text-white">
       Page Parameters <HiOutlineExclamationCircle style={{ marginLeft: '5px' }}/>
       </h5> */}
 
-      <Button className="flex justify-between text-gray-600 bg-slate-300 w-[350px]">
+      <Button className="flex justify-between text-gray-600 bg-slate-200 w-[350px]">
         <div className=" flex justify-between gap-2">
           <h4>Page Parameters </h4>
           <HiOutlineExclamationCircle />
