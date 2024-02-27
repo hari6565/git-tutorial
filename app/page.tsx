@@ -1,10 +1,10 @@
 import React from "react";
-import { Component } from "./components/MainPage";
+import Main from "./components/torus/page";
+
 const page = () => {
   return (
     <div>
-      <Component />
-      
+      <Main />
     </div>
   );
 };
