@@ -1,13 +1,12 @@
 import React from "react";
 import { Accordion } from "flowbite-react";
-import { CiText } from "react-icons/ci";
 
+import { CiText } from "react-icons/ci";
 import { BsLayoutThreeColumns } from "react-icons/bs";
 import { MdOutlineTableRows } from "react-icons/md";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { FaImage } from "react-icons/fa";
 import { RxButton } from "react-icons/rx";
-
 import { FaRegCreditCard } from "react-icons/fa";
 import { RiStackLine } from "react-icons/ri";
 import { CiGrid41 } from "react-icons/ci";

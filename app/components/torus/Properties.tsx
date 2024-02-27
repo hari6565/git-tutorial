@@ -22,9 +22,9 @@ import { WiMoonAltWaxingCrescent2 } from "react-icons/wi";
 import { WiWindDeg } from "react-icons/wi";
 function Component() {
   return (
-    <div className="max-w-sm ml-9 md:ml-auto bg-slate-600">
+    <div className=" bg-slate-300">
       {/* <div className='left-0'> */}
-      <Card className="w-[350px] h-[623px]  ml-9 bg-slate-600">
+      <Card className="w-[350px] h-[623px] bg-slate-600">
         {/* <h5 className="text-xl font-bold tracking-tight text-gray-200 dark:text-white">
       Page Parameters <HiOutlineExclamationCircle style={{ marginLeft: '5px' }}/>
       </h5> */}
