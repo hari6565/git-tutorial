@@ -85,7 +85,7 @@ export default function Component({ state, setState }) {
           >
             <ListGroup.Item
               className={
-                "flex flex-col px-0 dark:text-white w-[50px] bg-slate-400 py-0 rounded-lg"
+                "flex flex-col px-0 dark:text-white w-[50px] bg-slate-500 py-0 rounded-lg"
               }
               style={{ flexDirection: "column" }}
               onClick={() => setState(item.tooltip)}
