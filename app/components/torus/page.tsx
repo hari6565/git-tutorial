@@ -5,6 +5,7 @@ import FootBar from "./footer";
 import TopNavBar from "./TopNavBar";
 import SelectorSideBar from "../selectorSideBar/selectorSideBar";
 import Properties from "./Properties";
+import WorkSpace from "./WorkSpace";
 const page = () => {
   const [state, setState] = useState("");
   return (
@@ -16,6 +17,9 @@ const page = () => {
         <div className="h-[80%] flex ">
           <SideBar state={state} setState={setState} />
           <SelectorSideBar state={state} setState={setState} />
+        </div>
+        <div>
+          <WorkSpace />
         </div>
         <div className="">
           <Properties />
