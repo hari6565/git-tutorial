@@ -4,7 +4,7 @@ import SideBar from "./sideBar";
 import FootBar from "./footer";
 import TopNavBar from "./TopNavBar";
 import SelectorSideBar from "../selectorSideBar/selectorSideBar";
-import Properties from "../torus/properties";
+import Properties from "./Properties";
 const page = () => {
   const [state, setState] = useState("");
   return (

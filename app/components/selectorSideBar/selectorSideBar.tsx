@@ -1,6 +1,7 @@
 import React from "react";
 import { Accordion } from "flowbite-react";
 import { CiText } from "react-icons/ci";
+
 import { BsLayoutThreeColumns } from "react-icons/bs";
 import { MdOutlineTableRows } from "react-icons/md";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
@@ -30,14 +31,14 @@ const SelectorSideBar = ({ state, setState }) => {
       id: 2,
       title: "Layout Elements",
       arr: [
-        CiText,
-        BsLayoutThreeColumns,
         MdOutlineTableRows,
         CiText,
         FaRegCreditCard,
         BsLayoutThreeColumns,
         RiStackLine,
         MdOutlineTableRows,
+        CiText,
+        BsLayoutThreeColumns,
         MdCheckBoxOutlineBlank,
         CiGrid41,
         FaImage,
@@ -68,6 +69,9 @@ const SelectorSideBar = ({ state, setState }) => {
       id: 4,
       title: "PageElements",
       arr: [
+        RxButton,
+        FaImage,
+        RxButton,
         CiText,
         BsLayoutThreeColumns,
         MdOutlineTableRows,
@@ -81,9 +85,6 @@ const SelectorSideBar = ({ state, setState }) => {
         CiGrid41,
         FaImage,
         FaListUl,
-        RxButton,
-        FaImage,
-        RxButton,
       ],
     },
   ];
