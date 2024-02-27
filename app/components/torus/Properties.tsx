@@ -29,9 +29,14 @@ function Component() {
       Page Parameters <HiOutlineExclamationCircle style={{ marginLeft: '5px' }}/>
       </h5> */}
 
-      <Button className="flex items-center text-gray-600 bg-slate-300 ">
-        Page Parameters <HiOutlineExclamationCircle className="ml-2 w-96" />
-        <HiPlus className="mx-24 w-96" />
+      <Button className="flex justify-between text-gray-600 bg-slate-300 w-[350px]">
+        <div className=" flex justify-between gap-2">
+          <h4>Page Parameters </h4>
+          <HiOutlineExclamationCircle />
+        </div>
+        <div className=" ml-40">
+          <HiPlus color="black" className="w-4 h-4" />
+        </div>
       </Button>
       <Accordion>
         <Accordion.Panel>
@@ -44,13 +49,13 @@ function Component() {
           </Accordion.Title>
         </Accordion.Panel>
       </Accordion>
-      <h3 className="flex items-center text-gray-600 font-bold">
+      <h3 className="flex items-center text-gray-600 font-bold ml-4">
         <HiOutlineNewspaper className="mr-2" />
         Scaffold
         <HiOutlineCash className="ml-4 mr-5" />
         <HiOutlineTrash className="ml-24" />
       </h3>
-      <h4 className="text-gray-600 flex items-center my-3 ">
+      <h4 className="text-gray-600 flex items-center my-3 ml-4 ">
         HomePage <HiOutlinePencil className="ml-2" />
       </h4>
       <div className="flex items-center my-4">
@@ -79,11 +84,8 @@ function Component() {
             </div>
           </Accordion.Content>
         </Accordion.Panel>
-      </Accordion>
-
-      <Accordion>
         <Accordion.Panel>
-          <Accordion.Title className="flex items-center font-bold text-gray-600">
+          <Accordion.Title className="flex items-center font-bold text-gray-600 ">
             Page(Scaffold)Properties
           </Accordion.Title>
           {/* <HiOutlineExclamationCircle className="ml-2" /> */}
@@ -101,6 +103,7 @@ function Component() {
                 className="bg-gray-300 text-sm text-gray-600 rounded-lg font-bold w-48 p-2 border border-gray-300"
               />
             </div>
+
             <div>
               <p className="flex items-center text-sm text-gray-600">
                 SafeArea{" "}
@@ -119,34 +122,24 @@ function Component() {
             </div>
           </Accordion.Content>
         </Accordion.Panel>
-      </Accordion>
-      <div>
-        <Accordion>
-          <Accordion.Panel>
-            <Accordion.Title className="flex  items-center my-2 text-gray-600 font-bold text-sm">
-              NavBar Items Properties
-            </Accordion.Title>
-            {/* <HiOutlineExclamationCircle className="ml-2" />
+        <Accordion.Panel>
+          <Accordion.Title className="flex  items-center my-2 text-gray-600 font-bold text-sm">
+            NavBar Items Properties
+          </Accordion.Title>
+          {/* <HiOutlineExclamationCircle className="ml-2" />
               <HiChevronDown className="ml-24" /> */}
-            <Accordion.Content>
-              <p className="flex items-center text-sm text-gray-600">
-                Show on NavBar <WiWindDeg className="ml-44 " />
-              </p>
-              <p className="flex items-center text-sm text-gray-600">
-                Always Show Nav Bar on Page
-                <HiOutlineExclamationCircle style={{ marginLeft: "5px" }} />
-                <WiWindDeg className="ml-24" />
-              </p>
-            </Accordion.Content>
-          </Accordion.Panel>
-        </Accordion>
-      </div>
-
-      {/*        
-      <Button>
-       
-      </Button> */}
-      {/* </Card> */}
+          <Accordion.Content>
+            <p className="flex items-center text-sm text-gray-600">
+              Show on NavBar <WiWindDeg className="ml-44 " />
+            </p>
+            <p className="flex items-center text-sm text-gray-600">
+              Always Show Nav Bar on Page
+              <HiOutlineExclamationCircle style={{ marginLeft: "5px" }} />
+              <WiWindDeg className="ml-24" />
+            </p>
+          </Accordion.Content>
+        </Accordion.Panel>
+      </Accordion>
     </div>
   );
 }
