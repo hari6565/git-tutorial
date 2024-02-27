@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, Accordion } from "flowbite-react";
+import { Button, Accordion, ToggleSwitch } from "flowbite-react";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
 import { HiPlus } from "react-icons/hi";
 import { HiOutlineChevronRight } from "react-icons/hi";
@@ -20,9 +20,12 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { HiChatBubbleOvalLeft } from "react-icons/hi2";
 import { WiMoonAltWaxingCrescent2 } from "react-icons/wi";
 import { WiWindDeg } from "react-icons/wi";
+import { useState } from "react";
 function Component() {
+  const [switch2, setSwitch2] = useState(true);
+  const [switch1, setSwitch1] = useState(false);
   return (
-    <div className=" bg-slate-300 w-[350px] h-[623px]">
+    <div className=" bg-slate-300 w-[350px] h-[550px] overflow-x-auto">
       {/* <div className='left-0'> */}
       {/* <Card className="w-[350px] h-[623px] bg-slate-300"> */}
       {/* <h5 className="text-xl font-bold tracking-tight text-gray-200 dark:text-white">
@@ -105,19 +108,17 @@ function Component() {
             </div>
 
             <div>
-              <p className="flex items-center text-sm text-gray-600">
-                SafeArea{" "}
-                <HiOutlineExclamationCircle style={{ marginLeft: "5px" }} />
-                <WiMoonAltWaxingCrescent2 className="ml-36" />
+              <p className="flex justify-between text-sm text-gray-600">
+                SafeArea
+                <ToggleSwitch checked={switch2} onChange={setSwitch2} />
               </p>
-              <p className="flex items-center txt-sm text-gray-600">
-                Hide Keyboard on Tap{" "}
-                <HiOutlineExclamationCircle style={{ marginLeft: "5px" }} />
-                <WiMoonAltWaxingCrescent2 className="ml-16" />
+              <p className="flex justify-between txt-sm text-gray-600 my-3">
+                Hide Keyboard on Tap
+                <ToggleSwitch checked={switch2} onChange={setSwitch2} />
               </p>
-              <p className="flex items-center text-sm text-gray-600">
+              <p className="flex justify-between text-sm text-gray-600 my-3">
                 Disable Androis BackButton
-                <HiOutlineExclamationCircle style={{ marginLeft: "5px" }} />
+                <ToggleSwitch checked={switch1} onChange={setSwitch1} />
               </p>
             </div>
           </Accordion.Content>
@@ -129,13 +130,13 @@ function Component() {
           {/* <HiOutlineExclamationCircle className="ml-2" />
               <HiChevronDown className="ml-24" /> */}
           <Accordion.Content>
-            <p className="flex items-center text-sm text-gray-600">
-              Show on NavBar <WiWindDeg className="ml-44 " />
+            <p className="flex justify-between text-sm text-gray-600">
+              Show on NavBar
+              <ToggleSwitch checked={switch1} onChange={setSwitch1} />
             </p>
-            <p className="flex items-center text-sm text-gray-600">
+            <p className="flex justify-between text-sm text-gray-600 my-3">
               Always Show Nav Bar on Page
-              <HiOutlineExclamationCircle style={{ marginLeft: "5px" }} />
-              <WiWindDeg className="ml-24" />
+              <ToggleSwitch checked={switch1} onChange={setSwitch1} />
             </p>
           </Accordion.Content>
         </Accordion.Panel>
