@@ -16,8 +16,14 @@ import { TbFolderCog } from "react-icons/tb";
 import { TbApiApp } from "react-icons/tb";
 import { GrMultimedia } from "react-icons/gr";
 import { IoSettingsOutline } from "react-icons/io5";
+import { LiaElementor } from "react-icons/lia";
 
 const Icons = [
+  {
+    id: 0,
+    icon: LiaElementor,
+    tooltip: "Elements",
+  },
   {
     id: 1,
     icon: LuListTree,
@@ -67,8 +73,8 @@ const Icons = [
 
 export default function Component({ state, setState }) {
   return (
-    <div className="h-[85vh] flex flex-col bg-slate-400 dark:bg-gray-800  w-[60px]">
-      <ListGroup className="bg-slate-400 dark:bg-gray-800 flex flex-col gap-4 rounded-none border-none mt-5 items-center w-[60px] justify-between h-[80%]">
+    <div className="h-[85vh] flex flex-col bg-slate-500 dark:bg-gray-800  w-[60px]">
+      <ListGroup className="bg-slate-500 dark:bg-gray-800 flex flex-col gap-4 rounded-none border-none mt-5 items-center w-[60px] justify-between h-[80%]">
         {Icons.map((item) => (
           // <div className="flex">
           <Tooltip
@@ -79,7 +85,7 @@ export default function Component({ state, setState }) {
           >
             <ListGroup.Item
               className={
-                "flex flex-col px-0 dark:text-white w-[50px] bg-slate-400 py-0 rounded-lg"
+                "flex flex-col px-0 dark:text-white w-[50px] bg-slate-500 py-0 rounded-lg"
               }
               style={{ flexDirection: "column" }}
               onClick={() => setState(item.tooltip)}
