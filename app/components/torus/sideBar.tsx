@@ -73,7 +73,7 @@ const Icons = [
 
 export default function Component({ state, setState }) {
   return (
-    <div className="h-[85vh] flex flex-col bg-slate-500 dark:bg-gray-800  w-[60px]">
+    <div className="h-[88vh] flex flex-col bg-slate-500 dark:bg-gray-800  w-[60px]">
       <ListGroup className="bg-slate-500 dark:bg-gray-800 flex flex-col gap-4 rounded-none border-none mt-5 items-center w-[60px] justify-between h-[80%]">
         {Icons.map((item) => (
           // <div className="flex">
@@ -85,7 +85,7 @@ export default function Component({ state, setState }) {
           >
             <ListGroup.Item
               className={
-                "flex flex-col px-0 dark:text-white w-[50px] bg-slate-500 py-0 rounded-lg"
+                "flex flex-col px-0 dark:text-white w-[50px] bg-slate-400 py-0 rounded-lg"
               }
               style={{ flexDirection: "column" }}
               onClick={() => setState(item.tooltip)}

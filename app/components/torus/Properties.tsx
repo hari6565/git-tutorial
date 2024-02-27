@@ -25,7 +25,7 @@ function Component() {
   const [switch2, setSwitch2] = useState(true);
   const [switch1, setSwitch1] = useState(false);
   return (
-    <div className=" bg-slate-300 w-[350px] h-[550px] overflow-x-auto">
+    <div className=" bg-slate-300 w-[350px] h-[88vh] overflow-x-auto">
       {/* <div className='left-0'> */}
       {/* <Card className="w-[350px] h-[623px] bg-slate-300"> */}
       {/* <h5 className="text-xl font-bold tracking-tight text-gray-200 dark:text-white">

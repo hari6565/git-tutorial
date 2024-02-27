@@ -87,7 +87,7 @@ const Elements = [
 ];
 const SelectorSideBar = ({ state, setState }) => {
   return (
-    <div className="h-[85vh] w-[20vw] bg-slate-400 border-none rounded-none">
+    <div className="h-[88vh] w-[20vw] bg-slate-400 border-none rounded-none">
       {state == "Elements" ? (
         <Accordion className="w-[42vh] border-none rounded-none pl-1 pt-1 ">
           {Elements.map((item) => {
