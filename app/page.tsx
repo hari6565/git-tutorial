@@ -1,10 +1,12 @@
 import React from "react";
-import Main from "./components/torus/page";
+import NavBar from "./components/NavBar/page";
+// import Main from "./components/torus/page";
 
 const page = () => {
   return (
     <div>
-      <Main />
+      {/* <Main /> */}
+      <NavBar />
     </div>
   );
 };
