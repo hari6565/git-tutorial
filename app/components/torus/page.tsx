@@ -7,6 +7,7 @@ import SelectorSideBar from "../selectorSideBar/selectorSideBar";
 import Properties from "./Properties";
 import WorkSpace from "./WorkSpace";
 const page = () => {
+  const [disSize, setdisSize] = useState("disktop");
   const [state, setState] = useState("");
   return (
     <div className="h-full">
@@ -19,7 +20,7 @@ const page = () => {
           <SelectorSideBar state={state} setState={setState} />
         </div>
         <div>
-          <WorkSpace />
+          <WorkSpace disSize={disSize} />
         </div>
         <div className="">
           <Properties />

@@ -48,7 +48,7 @@ function Component() {
               Route Settings
               {/* <HiOutlineChevronRight className="mx-24" /> */}
             </Accordion.Title>
-            <Accordion.Content>
+            <Accordion.Content className=" bg-slate-400">
               <TextInput type="text" placeholder="homepage"></TextInput>
             </Accordion.Content>
           </Accordion.Panel>
@@ -76,7 +76,7 @@ function Component() {
             </Accordion.Title>
             {/* <HiOutlineExclamationCircle className="ml-2"></HiOutlineExclamationCircle> */}
             {/* <HiChevronDown className="ml-24" /> */}
-            <Accordion.Content>
+            <Accordion.Content className=" bg-slate-400">
               <h6 className="flex items-center text-white">
                 Opacity
                 <HiOutlineExclamationCircle className="ml-2" />
@@ -94,7 +94,7 @@ function Component() {
             </Accordion.Title>
             {/* <HiOutlineExclamationCircle className="ml-2" /> */}
 
-            <Accordion.Content>
+            <Accordion.Content className=" bg-slate-400">
               <div className="flex w-[350px]">
                 <div className="flex items-center text-sm text-white">
                   Background Color
@@ -134,7 +134,7 @@ function Component() {
             </Accordion.Title>
             {/* <HiOutlineExclamationCircle className="ml-2" />
               <HiChevronDown className="ml-24" /> */}
-            <Accordion.Content>
+            <Accordion.Content className=" bg-slate-400">
               <p className="flex justify-between text-sm text-white">
                 Show on NavBar
                 <ToggleSwitch checked={switch1} onChange={setSwitch1} />
