@@ -65,7 +65,7 @@ import { FcOk } from "react-icons/fc";
 import { MdPreview } from "react-icons/md";
 import { AiFillThunderbolt } from "react-icons/ai";
 
-const NavBar = () => {
+const NavBar = ({ setdisSize }) => {
   return (
     <div className=" bg-gray-800 ">
       <Navbar className=" bg-gray-800 h-12">
@@ -101,13 +101,17 @@ const NavBar = () => {
                 <IoMdSearch className=" w-7 h-7 -mt-2 " color="white" />
               </Navbar.Link>
             </Tooltip>
-            <Navbar.Link className="" href="#">
+            <Navbar.Link
+              className=""
+              href="#"
+              onClick={() => setdisSize("mobile")}
+            >
               <IoPhonePortraitSharp className=" w-7 h-7 -mt-2 " color="gray" />
             </Navbar.Link>
-            <Navbar.Link href="#">
+            <Navbar.Link href="#" onClick={() => setdisSize("tab")}>
               <IoMdTabletPortrait className=" w-7 h-7 -mt-2 " color="gray" />
             </Navbar.Link>
-            <Navbar.Link href="#">
+            <Navbar.Link href="#" onClick={() => setdisSize("disktop")}>
               <IoIosDesktop className=" w-7 h-7 -mt-2 " color="white" />
             </Navbar.Link>
             <Navbar.Link className="flex gap-1 text-white" href="#">

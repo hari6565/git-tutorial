@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div className="h-full">
       <div className="h-[10%]">
-        <TopNavBar />
+        <TopNavBar setdisSize={setdisSize} />
       </div>
       <div className="flex justify-between">
         <div className="h-[80%] flex ">
