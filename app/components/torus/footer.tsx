@@ -4,7 +4,7 @@ import React from "react";
 import { Footer } from "flowbite-react";
 const FootBar = () => {
   return (
-    <Footer className="fixed-bottom bg-gray-700 p-1 rounded-t-sm" container>
+    <Footer className="fixed-bottom bg-gray-800 p-1 rounded-t-sm" container>
       <Footer.Copyright
         className=" text-white w-full text-center"
         href="#"

@@ -67,8 +67,8 @@ import { AiFillThunderbolt } from "react-icons/ai";
 
 const NavBar = () => {
   return (
-    <div className=" bg-black ">
-      <Navbar className=" bg-black h-12">
+    <div className=" bg-gray-800 ">
+      <Navbar className=" bg-gray-800 h-12">
         <Navbar.Brand>
           <div className="flex justify-start">
             <Image

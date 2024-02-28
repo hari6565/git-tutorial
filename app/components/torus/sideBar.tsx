@@ -23,6 +23,7 @@ const Icons = [
     id: 0,
     icon: LiaElementor,
     tooltip: "Elements",
+    color: "white",
   },
   {
     id: 1,
@@ -73,8 +74,8 @@ const Icons = [
 
 export default function Component({ state, setState }) {
   return (
-    <div className="h-[88vh] flex flex-col bg-slate-200 dark:bg-gray-800  w-[60px]">
-      <ListGroup className="bg-slate-200 dark:bg-gray-800 flex flex-col gap-4 rounded-none border-none mt-5 items-center w-[60px] justify-between h-[80%]">
+    <div className="h-[88vh] flex flex-col bg-gray-800 dark:bg-gray-800  w-[60px] ">
+      <ListGroup className="bg-gray-800 dark:bg-gray-800 flex flex-col gap-4 rounded-none border-none mt-5 items-center w-[60px] justify-between h-[80%] text-white">
         {Icons.map((item) => (
           // <div className="flex">
           <Tooltip
@@ -85,12 +86,12 @@ export default function Component({ state, setState }) {
           >
             <ListGroup.Item
               className={
-                "flex flex-col px-0 dark:text-white w-[50px] bg-slate-200 py-0 rounded-lg"
+                "flex flex-col px-0 dark:text-white w-[50px] bg-gray-800 py-0 rounded-lg"
               }
               style={{ flexDirection: "column" }}
               onClick={() => setState(item.tooltip)}
             >
-              <div>{React.createElement(item.icon)}</div>
+              <div>{React.createElement(item.icon, { size: 15 })}</div>
             </ListGroup.Item>
           </Tooltip>
           // </div>

@@ -87,17 +87,17 @@ const Elements = [
 ];
 const SelectorSideBar = ({ state, setState }) => {
   return (
-    <div className="h-[88vh] w-[20vw] bg-white border-2 rounded-none">
+    <div className="h-[88vh] w-[20vw] bg-gray-800 border-2  rounded-none">
       {state == "Elements" ? (
         <Accordion className="w-[42vh] border-none rounded-none pl-1 pt-1 ">
           {Elements.map((item) => {
             return (
-              <Accordion.Panel className="border-none rounded-none">
-                <Accordion.Title className="border-none rounded-none">
+              <Accordion.Panel className="border-none rounded-none hover:text-gray-900">
+                <Accordion.Title className="border-none rounded-none  hover:text-gray-900 text-white">
                   {item.title}
                 </Accordion.Title>
                 <Accordion.Content>
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid grid-cols-3 gap-4 text-white">
                     {item.arr.map((Icon, id) => {
                       return (
                         <div key={id} className="">
