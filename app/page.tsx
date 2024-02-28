@@ -1,10 +1,12 @@
 import React from "react";
-import { Component } from "./components/MainPage";
+// import NavBar from "./components/NavBar/page";
+import Main from "./components/torus/page";
+
 const page = () => {
   return (
     <div>
-      <Component />
-      
+      <Main />
+      {/* <NavBar /> */}
     </div>
   );
 };
