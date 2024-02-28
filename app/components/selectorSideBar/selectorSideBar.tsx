@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Accordion, TextInput } from "flowbite-react";
 
 import { CiText } from "react-icons/ci";
@@ -11,6 +12,16 @@ import { FaRegCreditCard } from "react-icons/fa";
 import { RiStackLine } from "react-icons/ri";
 import { CiGrid41 } from "react-icons/ci";
 import { FaListUl } from "react-icons/fa";
+import { TfiLayoutColumn3Alt } from "react-icons/tfi";
+import { TfiLayoutGrid3 } from "react-icons/tfi";
+import { TfiLayoutTab } from "react-icons/tfi";
+import { TfiLayoutLineSolid } from "react-icons/tfi";
+import { MdOutlineRestorePage } from "react-icons/md";
+import { MdOutlinePageview } from "react-icons/md";
+import { SiCloudflarepages } from "react-icons/si";
+import { MdOutlineContactPage } from "react-icons/md";
+import { TbBrandPagekit } from "react-icons/tb";
+import { SiPowerpages } from "react-icons/si";
 const Elements = [
   {
     id: 1,
@@ -34,16 +45,16 @@ const Elements = [
       BsLayoutThreeColumns,
       RiStackLine,
       MdOutlineTableRows,
-      CiText,
-      BsLayoutThreeColumns,
+      TfiLayoutGrid3,
+      TfiLayoutColumn3Alt,
       MdCheckBoxOutlineBlank,
       CiGrid41,
       FaImage,
       FaListUl,
       RxButton,
       MdCheckBoxOutlineBlank,
-      FaImage,
-      RxButton,
+      TfiLayoutTab,
+      TfiLayoutLineSolid,
     ],
   },
   {
@@ -68,32 +79,40 @@ const Elements = [
     arr: [
       RxButton,
       FaImage,
-      RxButton,
+      MdOutlinePageview,
       CiText,
       BsLayoutThreeColumns,
       MdOutlineTableRows,
-      MdCheckBoxOutlineBlank,
-      CiText,
+      MdOutlineContactPage,
+      MdOutlineRestorePage,
       FaRegCreditCard,
-      BsLayoutThreeColumns,
+      SiPowerpages,
       RiStackLine,
-      MdOutlineTableRows,
+      TbBrandPagekit,
       MdCheckBoxOutlineBlank,
       CiGrid41,
-      FaImage,
+      SiCloudflarepages,
       FaListUl,
     ],
   },
 ];
 const SelectorSideBar = ({ state, setState }) => {
+  const [select, setSelect] = useState("");
   return (
     <div className="h-[88vh] w-[20vw] bg-gray-800 border-2  rounded-none">
       {state == "Elements" ? (
-        <Accordion className="w-[42vh] border-none rounded-none pl-1 pt-1 ">
-          {Elements.map((item) => {
+        <Accordion className="w-[41vh] border-none rounded-none pt-1 ">
+          {Elements.map((item, id) => {
             return (
-              <Accordion.Panel className="border-none rounded-none hover:text-gray-900">
-                <Accordion.Title className="border-none rounded-none  hover:text-gray-900 text-white">
+              <Accordion.Panel
+                className="border-none rounded-none hover:text-gray-900"
+                key={id}
+              >
+                <Accordion.Title
+                  className={`border-none rounded-none  hover:text-gray-900${
+                    select == item.title ? "text-black" : "text-white"
+                  }`}
+                >
                   {item.title}
                 </Accordion.Title>
                 <Accordion.Content>
@@ -119,13 +138,13 @@ const SelectorSideBar = ({ state, setState }) => {
             placeholder={`Search for ${state}`}
             required
           />
-          <Accordion className="w-[42vh] border-none rounded-none pl-1 pt-1 ">
+          <Accordion className="w-[41vh] border-none rounded-none pt-1 ">
             <Accordion.Panel className="border-none rounded-none">
               <Accordion.Title className="border-none rounded-none">
                 Elements
               </Accordion.Title>
-              <Accordion.Content>
-                <div className="grid grid-cols-3 gap-4">
+              <Accordion.Content className=" bg-white">
+                <div className="grid grid-cols-3 gap-4 text-black">
                   {state + "elements"}
                 </div>
               </Accordion.Content>

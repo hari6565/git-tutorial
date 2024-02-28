@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Accordion, ToggleSwitch } from "flowbite-react";
+import { Button, Accordion, ToggleSwitch, TextInput } from "flowbite-react";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
 import { HiPlus } from "react-icons/hi";
 import { HiOutlineChevronRight } from "react-icons/hi";
@@ -44,13 +44,13 @@ function Component() {
         </Button>
         <Accordion className="border-none rounded-none">
           <Accordion.Panel className="border-none rounded-none">
-            <Accordion.Title className="flex items-center border-none rounded-none text-white hover:text-gray-900 ">
+            <Accordion.Title className="flex items-center border-none rounded-none text-slate-500 hover:text-gray-900 ">
               Route Settings
               {/* <HiOutlineChevronRight className="mx-24" /> */}
-              <Accordion.Content>
-                <input type="text" placeholder="homepage"></input>
-              </Accordion.Content>
             </Accordion.Title>
+            <Accordion.Content>
+              <TextInput type="text" placeholder="homepage"></TextInput>
+            </Accordion.Content>
           </Accordion.Panel>
         </Accordion>
         <h3 className="flex items-center text-white font-bold ml-4">
@@ -71,7 +71,7 @@ function Component() {
         </div>
         <Accordion className="border-none rounded-none">
           <Accordion.Panel>
-            <Accordion.Title className="flex items-center font-bold text-white  hover:text-gray-900 ">
+            <Accordion.Title className="flex items-center font-bold text-slate-500  hover:text-gray-900 ">
               Visibility
             </Accordion.Title>
             {/* <HiOutlineExclamationCircle className="ml-2"></HiOutlineExclamationCircle> */}
@@ -89,16 +89,20 @@ function Component() {
             </Accordion.Content>
           </Accordion.Panel>
           <Accordion.Panel className="border-none rounded-none">
-            <Accordion.Title className="flex items-center font-bold text-white border-none rounded-none  hover:text-gray-900">
+            <Accordion.Title className="flex items-center font-bold text-slate-500 border-none rounded-none  hover:text-gray-900">
               Page(Scaffold)Properties
             </Accordion.Title>
             {/* <HiOutlineExclamationCircle className="ml-2" /> */}
 
             <Accordion.Content>
-              <p className="flex items-center text-sm text-white">
-                Background Color
-                <HiOutlineMenuAlt1 className="ml-2" />
-              </p>
+              <div className="flex w-[350px]">
+                <div className="flex items-center text-sm text-white">
+                  Background Color
+                </div>
+                <div className="flex items-center text-sm text-white">
+                  <HiOutlineMenuAlt1 className="ml-2" />
+                </div>
+              </div>
               <div className="flex items-center">
                 <HiChatBubbleOvalLeft className="text-white mr-2" />
                 <input
@@ -108,24 +112,24 @@ function Component() {
                 />
               </div>
 
-              <div>
-                <p className="flex justify-between text-sm text-white">
+              <div className="flex flex-col gap-2">
+                <div className="flex justify-between text-white">
                   SafeArea
                   <ToggleSwitch checked={switch2} onChange={setSwitch2} />
-                </p>
-                <p className="flex justify-between txt-sm text-white my-3">
+                </div>
+                <div className="flex justify-between text-white">
                   Hide Keyboard on Tap
                   <ToggleSwitch checked={switch2} onChange={setSwitch2} />
-                </p>
-                <p className="flex justify-between text-sm text-white my-3">
+                </div>
+                <div className="flex justify-between text-white">
                   Disable Androis BackButton
                   <ToggleSwitch checked={switch1} onChange={setSwitch1} />
-                </p>
+                </div>
               </div>
             </Accordion.Content>
           </Accordion.Panel>
           <Accordion.Panel className="border-none rounded-none">
-            <Accordion.Title className="flex  items-center my-2 text-white font-bold text-sm border-none rounded-none hover:text-gray-900">
+            <Accordion.Title className="flex  items-center my-2 text-slate-500 font-bold text-sm border-none rounded-none hover:text-gray-900">
               NavBar Items Properties
             </Accordion.Title>
             {/* <HiOutlineExclamationCircle className="ml-2" />
